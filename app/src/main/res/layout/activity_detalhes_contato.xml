@@ -16,6 +16,7 @@
         android:textSize="30sp" />
 
     <ImageView
+        android:id="@+id/imagem_foto"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginVertical="10dp"
@@ -26,14 +27,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:hint="Nome"/>
+        android:hint="Nome" />
 
     <EditText
         android:id="@+id/edit_endereco"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:hint="Endereço"/>
+        android:hint="Endereço" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -41,20 +42,20 @@
         android:orientation="horizontal">
 
         <EditText
+            android:id="@+id/edit_telefone"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="5"
-            android:id="@+id/edit_telefone"
-            android:inputType="phone"
+            android:gravity="center"
             android:hint="Telefone"
-            android:gravity="center" />
+            android:inputType="phone" />
 
         <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/imagem_telefone"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/baseline_phone_24"
-            android:id="@+id/imagem_telefone" />
+            android:src="@drawable/baseline_phone_24" />
 
     </LinearLayout>
 
@@ -69,15 +70,15 @@
             android:layout_height="wrap_content"
             android:layout_weight="5"
             android:gravity="center"
-            android:inputType="textEmailAddress"
-            android:hint="E-Mail"/>
+            android:hint="E-Mail"
+            android:inputType="textEmailAddress" />
 
         <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/image_email"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/baseline_email_24"
-            android:id="@+id/image_email" />
+            android:src="@drawable/baseline_email_24" />
 
     </LinearLayout>
 
@@ -91,16 +92,16 @@
             android:id="@+id/button_editar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
             android:text="Editar" />
 
         <Button
             android:id="@+id/button_voltar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
             android:text="Voltar" />
 
 
@@ -117,24 +118,24 @@
             android:id="@+id/button_gravar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
             android:text="Gravar" />
 
         <Button
             android:id="@+id/button_cancelar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
             android:text="Cancelar" />
 
         <Button
             android:id="@+id/button_Eliminar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
             android:text="Eliminar" />
 
 

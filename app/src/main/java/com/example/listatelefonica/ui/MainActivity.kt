@@ -29,13 +29,11 @@ class MainActivity : AppCompatActivity() {
         viewModel = ViewModelProvider(this)[MainViewModel::class.java]
 
         binding.recyclerViewContatos.layoutManager = LinearLayoutManager(this)
-
-        binding.recyclerViewContatos.layoutManager = LinearLayoutManager(this)
         viewModel.getListaContato()
         observe()
 
         launcher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
-            if(it.data != null && it.resultCode == 1) {
+            if (it.data != null && it.resultCode == 1) {
                 viewModel.getListaContato()
             }
         }
@@ -54,7 +52,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun placeAdapter() {
         adapter = ContatoListAdapter(listaContatos, ContatoOnClickListener {
-            val i = Intent(this, DetalhesContatoActivity:: class.java)
+            val i = Intent(this, DetalhesContatoActivity::class.java)
             i.putExtra("id", it.id)
             launcher.launch(i)
         })
